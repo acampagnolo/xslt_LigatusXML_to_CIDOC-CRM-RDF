@@ -14,7 +14,22 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../../../../PhD/AlbertoPhD(2)/Ligatus/StCarherinesFiles/1628.xml</String>
+                                    <String>XMLrecords/A16Jur2.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>endleaves_SVG</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>records/A1311Historica2.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -29,11 +44,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../../../../PhD/AlbertoPhD(2)/Ligatus/StCarherinesFiles/2386.xml</String>
+                                    <String>records/A16Jur2.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>LigatusXML-to-CIDOC_RDF</String>
+                                        <String>cleaning XSLT</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -119,7 +134,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>records/A1311Historica2.xml</String>
+                                    <String>../../../../PhD/AlbertoPhD(2)/Ligatus/StCarherinesFiles/2447.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -134,7 +149,22 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../../../../PhD/AlbertoPhD(2)/Ligatus/StCarherinesFiles/2447.xml</String>
+                                    <String>../../../../PhD/AlbertoPhD(2)/Ligatus/StCarherinesFiles/1628.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>LigatusXML-to-CIDOC_RDF</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../../../../PhD/AlbertoPhD(2)/Ligatus/StCarherinesFiles/2386.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -494,21 +524,6 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>records/A16Jur2.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>LigatusXML-to-CIDOC_RDF</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>records/A164Hist2.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -595,7 +610,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt-xml2rdf/ligatus2rdf.xsl</String>
+                                    <String>${pdu}/xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -622,7 +637,7 @@
                                     <null/>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
                                     <null/>
@@ -766,7 +781,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/cleaningStylesheet/cleaning.xsl</String>
+                                    <String>${pdu}/Ligatus-HAB_schema/cleaningStylesheet/cleaning.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -824,6 +839,92 @@
                                 </field>
                                 <field name="xslTransformer">
                                     <String>Saxon-PE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>endleaves_SVG</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/xslt_LigatusXML_to_CIDOC-CRM-RDF/EndleavesSVG/XSLT/Endleaves_CSS.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-HE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
@@ -905,11 +1006,7 @@
     </meta>
     <projectTree name="HABdescriptions.xpr">
         <folder masterFiles="true" name="Master Files">
-            <file name="xslt-xml2rdf/ligatus2rdf.xsl"/>
-        </folder>
-        <folder name="3M_provisionalFiles">
-            <file name="../3M/mapping_01.xml"/>
-            <file name="../3M/xmlInfoFile_04.xml"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf.xsl"/>
         </folder>
         <folder name="CIDOC-CRM">
             <folder name="CIDOC_PDF">
@@ -920,60 +1017,44 @@
                 <file name="../CIDOC-CRM/CIDOC-CRM_RDF_withURIs.xml"/>
             </folder>
         </folder>
-        <folder name="Descriptions_RDFs">
-            <folder name="HL288oHelmst_manuallyCoded">
-                <file name="RDF/HL288Helmst.rdf"/>
-                <file name="RDF/HL288Helmst_cover.rdf"/>
-                <file name="RDF/HL288Helmst_edges.rdf"/>
-                <file name="RDF/HL288Helmst_fastenings.rdf"/>
-                <file name="RDF/HL288Helmst_headEndband.rdf"/>
-                <file name="RDF/HL288Helmst_leftEndleaves.rdf"/>
-                <file name="RDF/HL288Helmst_lining.rdf"/>
-                <file name="RDF/HL288Helmst_rightEndleaves.rdf"/>
-                <file name="RDF/HL288Helmst_sewing.rdf"/>
-                <file name="RDF/HL288Helmst_spine.rdf"/>
-                <file name="RDF/HL288Helmst_tailEndband.rdf"/>
-                <file name="RDF/HL288Helmst_textblock.rdf"/>
-            </folder>
-        </folder>
         <folder name="Descriptions_XML">
-            <file name="records/A1311Historica2.xml"/>
-            <file name="records/A1381Medica.xml"/>
-            <file name="records/A15Arithmetica.xml"/>
-            <file name="records/A164Hist2.xml"/>
-            <file name="records/A16Jur2.xml"/>
-            <file name="records/A1971Grammatica.xml"/>
-            <file name="records/A213Historica.xml"/>
-            <file name="records/A213Historica2o.xml"/>
-            <file name="records/A223Juridica2.xml"/>
-            <file name="records/A2316Poetica.xml"/>
-            <file name="records/A3993Theologica.xml"/>
-            <file name="records/A604Theologica.xml"/>
-            <file name="records/A95Poetica.xml"/>
-            <file name="records/A9Pol2.xml"/>
-            <file name="records/CodGuel535-16Nov.xml"/>
-            <file name="records/CodGuelf11-1-Aug4.xml"/>
-            <file name="records/CodGuelf1126Helmst.xml"/>
-            <file name="records/CodGuelf1391Helmst.xml"/>
-            <file name="records/CodGuelf15Helmst.xml"/>
-            <file name="records/CodGuelf17-1-Aug2.xml"/>
-            <file name="records/CodGuelf22Helmst.xml"/>
-            <file name="records/CodGuelf37-16-Aug2.xml"/>
-            <file name="records/CodGuelf50-7-Aug2.xml"/>
-            <file name="records/HC1888Helmst.xml"/>
-            <file name="records/HC65b4Helmst.xml"/>
-            <file name="records/HE2692Helmst.xml"/>
-            <file name="records/HF13944Helmst.xml"/>
-            <file name="records/HJ2988Helmst.xml"/>
-            <file name="records/HL288Helmst.xml"/>
-            <file name="records/HP14028Helmst.xml"/>
-            <file name="records/Ht2832Helmst.xml"/>
-            <file name="records/HYv4398Helmst.xml"/>
-            <file name="records/HYv4828Helmst.xml"/>
+            <file name="XMLrecords/A1311Historica2.xml"/>
+            <file name="XMLrecords/A1381Medica.xml"/>
+            <file name="XMLrecords/A15Arithmetica.xml"/>
+            <file name="XMLrecords/A164Hist2.xml"/>
+            <file name="XMLrecords/A16Jur2.xml"/>
+            <file name="XMLrecords/A1971Grammatica.xml"/>
+            <file name="XMLrecords/A213Historica.xml"/>
+            <file name="XMLrecords/A213Historica2o.xml"/>
+            <file name="XMLrecords/A223Juridica2.xml"/>
+            <file name="XMLrecords/A2316Poetica.xml"/>
+            <file name="XMLrecords/A3993Theologica.xml"/>
+            <file name="XMLrecords/A604Theologica.xml"/>
+            <file name="XMLrecords/A95Poetica.xml"/>
+            <file name="XMLrecords/A9Pol2.xml"/>
+            <file name="XMLrecords/CodGuel535-16Nov.xml"/>
+            <file name="XMLrecords/CodGuelf11-1-Aug4.xml"/>
+            <file name="XMLrecords/CodGuelf1126Helmst.xml"/>
+            <file name="XMLrecords/CodGuelf1391Helmst.xml"/>
+            <file name="XMLrecords/CodGuelf15Helmst.xml"/>
+            <file name="XMLrecords/CodGuelf17-1-Aug2.xml"/>
+            <file name="XMLrecords/CodGuelf22Helmst.xml"/>
+            <file name="XMLrecords/CodGuelf37-16-Aug2.xml"/>
+            <file name="XMLrecords/CodGuelf50-7-Aug2.xml"/>
+            <file name="XMLrecords/HC1888Helmst.xml"/>
+            <file name="XMLrecords/HC65b4Helmst.xml"/>
+            <file name="XMLrecords/HE2692Helmst.xml"/>
+            <file name="XMLrecords/HF13944Helmst.xml"/>
+            <file name="XMLrecords/HJ2988Helmst.xml"/>
+            <file name="XMLrecords/HL288Helmst.xml"/>
+            <file name="XMLrecords/HP14028Helmst.xml"/>
+            <file name="XMLrecords/Ht2832Helmst.xml"/>
+            <file name="XMLrecords/HYv4398Helmst.xml"/>
+            <file name="XMLrecords/HYv4828Helmst.xml"/>
         </folder>
         <folder name="Ligatus Schema - HAB">
             <folder name="cleanUpXSLT">
-                <file name="cleaningStylesheet/cleaning.xsl"/>
+                <file name="Ligatus-HAB_schema/cleaningStylesheet/cleaning.xsl"/>
             </folder>
             <file name="../Ligatus/schema/basic-1.8.1_HAB-AC.xsd"/>
         </folder>
@@ -985,24 +1066,27 @@
             <file name="../RDFS/rdf-xml_schema.xsd"/>
             <file name="../RDFS/rdf.xml"/>
         </folder>
-        <folder name="xslt-xml2rdf">
-            <file name="xslt-xml2rdf/ligatus2rdf.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_attachment.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_boards.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_content.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_covering.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_edges.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_endbands.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_endleaves.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_furniture.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_general.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_lining.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_main.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_markers.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_materials.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_sewing.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_spine.xsl"/>
-            <file name="xslt-xml2rdf/ligatus2rdf_textblock.xsl"/>
+        <folder name="xslt_LigatusXML_to_CIDOC-CRM-RDF">
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_attachment.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_boards.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_content.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_covering.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_edges.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_endbands.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_endleaves.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_furniture.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_general.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_lining.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_main.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_markers.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_materials.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_sewing.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_spine.xsl"/>
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/ligatus2rdf_textblock.xsl"/>
+        </folder>
+        <folder name="xslt_SVGendleaves">
+            <file name="xslt_LigatusXML_to_CIDOC-CRM-RDF/EndleavesSVG/XSLT/Endleaves_CSS.xsl"/>
         </folder>
     </projectTree>
 </project>

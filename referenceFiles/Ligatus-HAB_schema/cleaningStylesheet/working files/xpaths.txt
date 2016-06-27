@@ -1,0 +1,50 @@
+
+<xsl:template match="//book/dimensions/bookProfileDrawing"/>
+
+<xsl:template match="//book/openingCharacteristics/hollowBack/following-sibling::node()"/>
+
+<xsl:template match="//book/markers/yes/marker/pageMarker/conditions"/>
+
+<xsl:template match="//book/markers/yes/marker/pageMarker/profile"/>
+
+<xsl:template match="//book/insertedMaterials"/>
+
+<xsl:template match="//book/textLeaves/condition"/>
+
+<xsl:template match="//book/textLeaves/condition/(following-sibling::node() | self::node())"/>
+
+<xsl:template match="//book/inkPigments"/>
+
+<xsl:template match="//book/endleaves//condition"/>
+
+<xsl:template match="//book/sewing/sewingCondition"/>
+
+<xsl:template match="//book/edges/condition"/>
+
+<xsl:template match="//book/boards/yes/boards/board/mechanicalAttachment/yesNoNK/yes/drawing"/>
+
+<xsl:template match="//book/boards/yes/boards/board/formation/spineEdgeProfile"/>
+
+<xsl:template match="//book/boards/yes/boardAttachmentCondition"/>
+
+<xsl:template match="//book/boards/yes/boardCondition"/>
+
+<xsl:template match="//book/spine/adhesive"/>
+
+<xsl:template match="//book/spine/profile/(originalProfile | currentProfile)"/>
+
+<xsl:template match="//book/spine/lining/yes/liningsFromOutside"/>
+
+<xsl:template match="//book/endbands/yes/endband/cores/yes/crossSection"/>
+
+<xsl:template match="//book/endbands/yes/endband/condition"/>
+
+<xsl:template match="//book/coverings/yes/cover/existingRepairs"/>
+
+<xsl:template match="//book/coverings/yes/cover/condition"/>
+
+<xsl:template match="//book/furniture/yes/furniture/condition"/>
+
+<xsl:template match="//book/furniture/yes/location"/>
+
+<xsl:template match="//book/additionalNotes"/>
