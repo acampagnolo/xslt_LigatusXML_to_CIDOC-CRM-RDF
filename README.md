@@ -38,4 +38,4 @@ RDF | folder containing the CIDOC-CRM RDF files
 SVG | folder containing the SVG generated via the XSLT codes contained in the ../XSLTransformations rep.
 
 
-The Oxygen project file is: HABdescriptions.xpr
+The Oxygen project file is: HABdescriptions.xpr (inserted here for reference)
