@@ -3,7 +3,8 @@ Code to transform Ligatus XML descriptions of bookbindings into CIDOC-CRM RDF fi
 
 This code was written specifically for a research project at the Herzog August Bibliothek Wolfenbüttel <http://www.hab.de/de/home/wissenschaft/gastforscher-und-alumni/stipendiatenprofile/alberto-campagnolo.html>. However the code takes a number of general parameters (see below) to adapt the output to other projects (for the generation of the URI for example).
 
-The code is written in modules. The master file is [ligatus2rdf.xsl](https://github.com/acampagnolo/xslt_LigatusXML_to_CIDOC-CRM-RDF/blob/master/ligatus2rdf.xsl), which includes all the other modules via '\<xsl:include/\>'
+The code is written in modules. The master file is [ligatus2rdf.xsl](https://github.com/acampagnolo/xslt_LigatusXML_to_CIDOC-CRM-RDF/blob/master/ligatus2rdf.xsl), which includes all the other modules via 
+   |<xsl:include/>
 
 This template takes 4 general parameters to adapt the code to different projects.
 
