@@ -33,8 +33,8 @@ Folder name | Description
 --- | ---
 xslt_LigatusXML_to_CIDOC-CRM-RDF | folder containing all the xslt modules (this GitHub repository)
 Ligatus-HAB_schema |  folder containing the Ligatus XML schema (based on [basic-1.8_0.xsd](http://www.ligatus.org.uk/stcatherines/sites/ligatus.org.uk.stcatherines/files/basic-1.8_0.xsd)); the file is here in the [reference file folder](https://github.com/acampagnolo/xslt_LigatusXML_to_CIDOC-CRM-RDF/tree/master/referenceFiles) (see also [this readme file](https://github.com/acampagnolo/xslt_LigatusXML_to_CIDOC-CRM-RDF/blob/master/referenceFiles/README.md))
-records | folder containinng the XML records
-RDF | folder containing the CIDOC-CRM RDF files
+records | folder containinng the XML bookbinding description records
+RDF | folder containing the CIDOC-CRM XML/RDF (pretty print) output files
 SVG | folder containing the SVG generated via [Endleaves_CSS.xsl](https://github.com/acampagnolo/xslt_LigatusXML_to_CIDOC-CRM-RDF/blob/master/EndleavesSVG/XSLT/Endleaves_CSS.xsl); XSLT codes part of the [XSLTransformations repository](https://github.com/acampagnolo/XSLTransformations)
 
 
