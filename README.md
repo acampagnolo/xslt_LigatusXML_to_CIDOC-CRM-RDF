@@ -30,6 +30,7 @@ The only parameter that is required at runtime is the 'collectionURI' that is us
 The folder structure of the project is as follows:
 
 Folder name | Description
+--- | ---
 xslt_LigatusXML_to_CIDOC-CRM-RDF | folder containing all the xslt modules (this GitHub repository)
 Ligatus-HAB_schema |  folder containing the Ligatus XML schema
 records | folder containinng the XML records
