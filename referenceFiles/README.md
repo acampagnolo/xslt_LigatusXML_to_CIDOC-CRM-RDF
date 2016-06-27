@@ -4,8 +4,6 @@ These files and folders in the actual project structure are placed in a step abo
 The structure is as follows:
 
 * Ligatus-HAB_schema
-** cleaningStylesheet
-** basic-1.8.1_HAB-AC.xsd
 * RDF
 * SVG
 * XMLrecords
