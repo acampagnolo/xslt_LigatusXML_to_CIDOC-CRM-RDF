@@ -35,7 +35,7 @@ xslt_LigatusXML_to_CIDOC-CRM-RDF | folder containing all the xslt modules (this 
 Ligatus-HAB_schema |  folder containing the Ligatus XML schema (based on http://www.ligatus.org.uk/stcatherines/sites/ligatus.org.uk.stcatherines/files/basic-1.8_0.xsd)
 records | folder containinng the XML records
 RDF | folder containing the CIDOC-CRM RDF files
-SVG | folder containing the SVG generated via the XSLT codes contained in the ../XSLTransformations rep.
+SVG | folder containing the SVG generated via the XSLT codes contained in the https://github.com/acampagnolo/XSLTransformations repository
 
 
 The Oxygen project file is: HABdescriptions.xpr (inserted here for reference)
