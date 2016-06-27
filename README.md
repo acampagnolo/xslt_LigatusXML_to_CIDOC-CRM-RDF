@@ -6,8 +6,8 @@ This code was written specifically for a research project at the Herzog August B
 The code is written in modules. The master file is ligatus2rdf.xsl, which includes all the other modules via <xsl:include/>
 This template takes 4 general parameters to adapt the code to different projects.
 
-   <!-- This, non compulsory, parameter tells the stylesheet to generate output with a long list of namespace URI that will be converted into shortened URI in Turtle for easier reading;
-    input should be in the form of 'yes' or 'no'-->
+   
+    <!-- This, non compulsory, parameter tells the stylesheet to generate output with a long list of namespace URI that will be converted into shortened URI in Turtle for easier reading; input should be in the form of 'yes' or 'no'-->
     <xsl:param name="toTurtle" select="'yes'"/>
     
     <!-- This, non compulsory, parameter tells the stylesheet whether to generate the reference to the SVG line drawings of endleaf structures or not;
