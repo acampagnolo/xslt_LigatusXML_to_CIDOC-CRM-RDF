@@ -1,4 +1,4 @@
-# xslt_LigatusXML_to_CIDOC-CRM-RDF
+# xslt_LigatusXML_to_CIDOC-CRM-XMLRDF
 Code to transform Ligatus XML descriptions of bookbindings into CIDOC-CRM RDF files (typed through the Language of Bindings thesaurus). Draft1-2016-06-26
 
 This code was written specifically for a research project at the Herzog August Bibliothek Wolfenbüttel <http://www.hab.de/de/home/wissenschaft/gastforscher-und-alumni/stipendiatenprofile/alberto-campagnolo.html>. However the code takes a number of general parameters (see below) to adapt the output to other projects (for the generation of the URI for example).
