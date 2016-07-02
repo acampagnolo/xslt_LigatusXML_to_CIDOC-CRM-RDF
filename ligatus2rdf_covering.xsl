@@ -16,7 +16,7 @@
                     encoding="utf-8">
                     <rdf:RDF>
                         <xsl:call-template name="namespaceDeclaration"/>
-                        <xsl:for-each select="cover">
+                        <xsl:for-each select="yes/cover">
                             <crm:E22_Man-Made_Object>
                                 <xsl:attribute name="rdf:about"
                                     select="
