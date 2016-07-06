@@ -38,25 +38,31 @@
                             </crm:P3_has_note>
                         </crm:E42_Identifier>
                     </crm:P1_is_identified_by>
-                    <crm:P55_has_current_location>
-                        <crm:E53_Place rdf:about="http://dbpedia.org/resource/Wolfenb%C3%BCttel">
-                            <crm:P1_is_identified_by>
-                                <crm:E48_Place_Name rdf:about="http://sws.geonames.org/2806914">
-                                    <rdfs:label xml:lang="en">Wolfenbüttel</rdfs:label>
-                                    <rdfs:label xml:lang="de">Wolfenbüttel</rdfs:label>
-                                    <rdfs:label xml:lang="la">Guelpherbytum</rdfs:label>
-                                </crm:E48_Place_Name>
-                            </crm:P1_is_identified_by>
-                        </crm:E53_Place>
-                    </crm:P55_has_current_location>
-                    <crm:P50_has_current_keeper>
-                        <crm:E40_Legal_Body rdf:about="/actors/hab.rdf#hab">
-                            <!-- CREATE ACTOR RESOURCE -->
-                            <rdfs:label xml:lang="en">Herzog August Library</rdfs:label>
-                            <rdfs:label xml:lang="de">Herzog August Bibliothek</rdfs:label>
-                            <rdfs:label xml:lang="la">Bibliotheca Augusta</rdfs:label>
-                        </crm:E40_Legal_Body>
-                    </crm:P50_has_current_keeper>
+                    <xsl:choose>
+                        <xsl:when test="$collectionURI eq 'http://diglib.hab.de'">
+                            <crm:P55_has_current_location>
+                                <crm:E53_Place
+                                    rdf:about="http://dbpedia.org/resource/Wolfenb%C3%BCttel">
+                                    <crm:P1_is_identified_by>
+                                        <crm:E48_Place_Name
+                                            rdf:about="http://sws.geonames.org/2806914">
+                                            <rdfs:label xml:lang="en">Wolfenbüttel</rdfs:label>
+                                            <rdfs:label xml:lang="de">Wolfenbüttel</rdfs:label>
+                                            <rdfs:label xml:lang="la">Guelpherbytum</rdfs:label>
+                                        </crm:E48_Place_Name>
+                                    </crm:P1_is_identified_by>
+                                </crm:E53_Place>
+                            </crm:P55_has_current_location>
+                            <crm:P50_has_current_keeper>
+                                <crm:E40_Legal_Body rdf:about="/actors/hab.rdf#hab">
+                                    <!-- CREATE ACTOR RESOURCE -->
+                                    <rdfs:label xml:lang="en">Herzog August Library</rdfs:label>
+                                    <rdfs:label xml:lang="de">Herzog August Bibliothek</rdfs:label>
+                                    <rdfs:label xml:lang="la">Bibliotheca Augusta</rdfs:label>
+                                </crm:E40_Legal_Body>
+                            </crm:P50_has_current_keeper>
+                        </xsl:when>
+                    </xsl:choose>
                     <crm:P108i_was_produced_by>
                         <crm:E12_Production>
                             <xsl:attribute name="rdf:about"
